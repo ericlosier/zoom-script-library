@@ -57,7 +57,7 @@ If no filename is provided, the script automatically generates one in the format
 
 **2. Fetch Active Users**
 
-	It sends a GET request to the `/users` endpoint with `status=active` and iterates through all pages using the `next_page_token`.
+It sends a GET request to the `/users` endpoint with `status=active` and iterates through all pages using the `next_page_token`.
 
 **3. Export to CSV**
 
