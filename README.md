@@ -17,6 +17,7 @@ Each script lives in its own folder, with:
 git clone https://github.com/ericlosier/zoom-script-library.git
 cd zoom-script-library
 pip install -r requirements.txt
+```
 
 ##License
 MIT License
