@@ -1,4 +1,4 @@
-# Zoom Active Users Export Script `list\_users.py`
+# Zoom Active Users Export Script `(list_users.py)`
 
 This Python script retrieves a list of **active Zoom users** from your Zoom account using the **Zoom REST API (v2)** and exports the results to a **CSV file**. It uses **OAuth account-level credentials** for authentication and handles pagination automatically.
 
