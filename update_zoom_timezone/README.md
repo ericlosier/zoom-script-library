@@ -78,8 +78,10 @@ Each operation is logged to the console, showing whether the timezone was update
 ## 🧾 Example CSV File
 | email | timezone |
 |---|---|
-| alex@example.com | America/New_York |
-| maria@example.com | Asia/Tokyo |
+| user1@example.com | America/Toronto |
+| user2@example.com | Europe/Rome |
+
+Timezones should be defined using the `TZ Identifier` from the [IANA time zone database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)
 
 ## 🧑‍💻 Example Console Output
 ```
@@ -112,6 +114,6 @@ All 2 users from CSV processed. Exiting!
 ```
 
 ## 📚 References
-- Zoom API Documentation: https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/users
+- Zoom API Documentation: https://developers.zoom.us/docs/api/users/#tag/users/get/users/{userId}
 - OAuth Account Credentials Flow: https://developers.zoom.us/docs/integrations/oauth/account-level-apps/
 
