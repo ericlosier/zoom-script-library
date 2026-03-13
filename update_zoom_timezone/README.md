@@ -1,25 +1,117 @@
-# update\_zoom\_timezone.py
+# Zoom User Timezone Update Script `(update_zoom_timezone.py)`
 
-## Purpose
-Updates the timezone of Zoom users based on a provided CSV file.
+This Python script updates the **timezone** of Zoom users based on data from a **CSV file**. It uses the **Zoom REST API (v2)** and authenticates via **OAuth account-level credentials**. The script checks each user’s current timezone and updates it only if a change is required.
 
-## Usage
+## 📋 Features
+
+- Authenticates with Zoom using **OAuth (Account Credentials flow)**  
+- Reads user email and target timezone from a **CSV file**  
+- Retrieves each user’s current timezone from Zoom  
+- Updates the user’s timezone only if it differs from the desired value  
+- Provides detailed console output for each processed user  
+
+## 🧩 Requirements
+
+- Python 3.7 or higher  
+- Zoom account with **OAuth App (Server-to-Server)** credentials  
+- Required Python packages:
+  - `requests`
+  - `csv` (default)
+  - `json` (default)
+  - `datetime` (default)
+
+Install dependencies (if not already available):
+
 ```bash
-python update_zoom_timezone/update_zoom_timezone.py users.csv
+pip install requests
 ```
 
-## CSV Format
+## ⚙️ Configuration
+Before running the script, update the following variables in the file:
+
+```
+CLIENT_ID = "YOUR_CLIENT_ID"
+CLIENT_SECRET = "YOUR_CLIENT_SECRET"
+ACCOUNT_ID = "YOUR_ACCOUNT_ID"
+```
+
+These values come from your **Zoom App Credentials** in the Zoom Developer Portal.
+
+## 🚀 Usage
+Run the script directly from the command line with a CSV file containing user data:
+
+```python update_zoom_timezone.py users.csv```
+
+## 🧠 How It Works
+**1. Obtain OAuth Token**
+
+The script calls the Zoom OAuth token endpoint (`https://zoom.us/oauth/token`) using the **account_credentials** grant type to retrieve an access token.
+
+**2. Read CSV File**
+
+It reads each row from the provided CSV file, extracting the user’s email and desired timezone.
+
+**3. Retrieve Current Timezone**
+
+For each user, the script calls the `/users/{email}` endpoint to get the current timezone.
+
+**4. Update Timezone (if needed)**
+
+If the user’s current timezone differs from the target timezone, the script sends a PATCH request to update it.
+
+**5. Log Results**
+
+Each operation is logged to the console, showing whether the timezone was updated or already correct.
+
+## 🧰 Functions Overview
+| Function | Description |
+|---|---|
+| `refresh_oauth_token()` | Retrieves a new OAuth access token using account credentials. |
+| `update_user_timezone(token, email, new_timezone)` | Checks and updates a user’s timezone if necessary. |
+| `main(csv_file)` | Main entry point that orchestrates token retrieval and timezone updates. |
+
+## ⚠️ Error Handling
+- If the OAuth token request fails, the script prints an error message and exits.
+- If a user is not found or the API returns an error, it logs the issue to the console.
+- The script validates CSV input and handles network or API exceptions gracefully.
+
+## 🧾 Example CSV File
 | email | timezone |
 |---|---|
-| user1@example.com | America/Montreal |
-| user2@example.com | Europe/London |
+| alex@example.com | America/New_York |
+| maria@example.com | Asia/Tokyo |
 
-## Output
-- Logs success or failure for each user.
-- Displays updated timezones.
+## 🧑‍💻 Example Console Output
+```
+  ____                              
+ |_  /___  ___ _ __                 
+  / // _ \/ _ \ '  \                
+ /___\___/\___/_|_|_|               
+ |_   _(_)_ __  ___ ______ _ _  ___ 
+   | | | | '  \/ -_)_ / _ \ ' \/ -_)
+  _|_|_|_|_|_|_\___/__\___/_||_\___|
+ | | | |_ __  __| |__ _| |_ ___     
+ | |_| | '_ \/ _` / _` |  _/ -_)    
+  \___/| .__/\__,_\__,_|\__\___|    
+       |_|                          
 
-## Dependencies
-- requests
+OAuth token refreshed successfully!
 
-## Example
-See the examples/sample_users.csv file for input format.
+Cycling through users from CSV...
+
+1 - Processing user1@example.com: America/Toronto
+Current timezone for John Doe: UTC
+New timezone: success!
+--------------------------------------------------
+2 - Processing user2@example.com: Europe/London
+Current timezone for Jane Smith: Europe/London
+New timezone: already set.
+--------------------------------------------------
+
+All 2 users from CSV processed. Exiting!
+```
+
+## 📚 References
+- Zoom API Documentation: https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/users
+- OAuth Account Credentials Flow: https://developers.zoom.us/docs/integrations/oauth/account-level-apps/
+
