@@ -52,12 +52,15 @@ If no filename is provided, the script automatically generates one in the format
 
 ## 🧠 How It Works
 **1. Obtain OAuth Token**
+
 	The script calls the Zoom OAuth token endpoint (`https://zoom.us/oauth/token`) using the **account_credentials** grant type to retrieve an access token.
 
 **2. Fetch Active Users**
+
 	It sends a GET request to the `/users` endpoint with `status=active` and iterates through all pages using the `next_page_token`.
 
 **3. Export to CSV**
+
 	The retrieved user data is written to a CSV file using the `list_to_csv()` helper function.
 
 ## 🧾 Output Example
