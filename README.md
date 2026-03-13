@@ -9,7 +9,7 @@ Each script lives in its own folder, with:
 - Optional `/examples` folder containing example input files.
 
 ## List of Available Scripts
-1.  **update\_zoom\_timezone/** — Bulk update user timezones.
+1.  [**update\_zoom\_timezone/**](update_zoom_timezone/README.md) — Bulk update user timezones.
 2.  **list_zoom_users/** — Fetch and export all Zoom users.
 
 ## Installation
@@ -19,5 +19,5 @@ cd zoom-script-library
 pip install -r requirements.txt
 ```
 
-##License
+## License
 MIT License

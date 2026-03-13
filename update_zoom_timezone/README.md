@@ -1,4 +1,4 @@
-# Script: update\_zoom\_timezone.py
+# update\_zoom\_timezone.py
 
 ## Purpose
 Updates the timezone of Zoom users based on a provided CSV file.
