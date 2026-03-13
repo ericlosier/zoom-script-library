@@ -3,7 +3,7 @@
 A collection of independent Python scripts that extend Zoom's admin portal capabilities in managing a Zoom environment.
 
 ## List of Available Scripts
-1.  [**list_users**] — Fetch and export all active Zoom users.
+1.  [**list\_users**](list_users) — Fetch and export all active Zoom users.
 2.  [**update\_zoom\_timezone**](update_zoom_timezone) — Bulk update user timezones.
 
 ## Structure
