@@ -19,8 +19,8 @@ cd zoom-script-library
 pip install -r requirements.txt
 ```
 
-## Creating a Zoom Server‐to‐Server OAuth App
-Full instructions can be found on this [wiki/Creating-a-Zoom-Server‐to‐Server-OAuth-App](Wiki page).
+## 📚 Creating a Zoom Server‐to‐Server OAuth App
+Full instructions can be found on this [**Wiki page**](wiki/Creating-a-Zoom-Server‐to‐Server-OAuth-App).
 
 ## ⚖️ License
 MIT License
