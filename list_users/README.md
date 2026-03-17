@@ -35,7 +35,12 @@ CLIENT_SECRET = "YOUR_CLIENT_SECRET"
 ACCOUNT_ID = "YOUR_ACCOUNT_ID"
 ```
 
-These values come from your **Zoom App Credentials** in the Zoom Developer Portal.
+These values come from your **Zoom Server-to-Server OAuth App Credentials**. More info on this topic can be found in [**this Wiki page**](https://github.com/ericlosier/zoom-script-library/wiki/Creating-a-Zoom-Server-to-Server-OAuth-App).
+
+### Zoom Server-to-Server OAuth App Scopes
+The following granular scopes should be added to the Zoom Server-to-Server OAuth app used by this script:
+
+- user:read:list\_users:admin
 
 ## 🚀 Usage
 Run the script directly from the command line:
