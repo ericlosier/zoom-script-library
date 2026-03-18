@@ -56,17 +56,17 @@ If no filename is provided, the script automatically generates one in the format
 `zoom_active_users_YYYYMMDD_HHMMSS.csv`
 
 ## 🧠 How It Works
-**1. Obtain OAuth Token**
+1. **Obtain OAuth Token**
 
-The script calls the Zoom OAuth token endpoint (`https://zoom.us/oauth/token`) using the **account_credentials** grant type to retrieve an access token.
+	The script calls the Zoom OAuth token endpoint (`https://zoom.us/oauth/token`) using the **account_credentials** grant type to retrieve an access token.
 
-**2. Fetch Active Users**
+2. **Fetch Active Users**
 
-It sends a GET request to the `/users` endpoint with `status=active` and iterates through all pages using the `next_page_token`.
+	It sends a GET request to the `/users` endpoint with `status=active` and iterates through all pages using the `next_page_token`.
 
-**3. Export to CSV**
+3. **Export to CSV**
 
-The retrieved user data is written to a CSV file using the `list_to_csv()` helper function.
+	The retrieved user data is written to a CSV file using the `list_to_csv()` helper function.
 
 ## 🧾 Output Example
 The generated CSV file includes columns such as:

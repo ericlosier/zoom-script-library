@@ -53,21 +53,21 @@ Run the script directly from the command line with a CSV file containing user da
 
 	The script calls the Zoom OAuth token endpoint (`https://zoom.us/oauth/token`) using the **account_credentials** grant type to retrieve an access token.
 
-**2. Read CSV File**
+2. **Read CSV File**
 
-It reads each row from the provided CSV file, extracting the user’s email and desired timezone.
+	It reads each row from the provided CSV file, extracting the user’s email and desired timezone.
 
-**3. Retrieve Current Timezone**
+3. **Retrieve Current Timezone**
 
-For each user, the script calls the `/users/{email}` endpoint to get the current timezone.
+	For each user, the script calls the `/users/{email}` endpoint to get the current timezone.
 
-**4. Update Timezone (if needed)**
+4. **Update Timezone (if needed)**
 
-If the user’s current timezone differs from the target timezone, the script sends a PATCH request to update it.
+	If the user’s current timezone differs from the target timezone, the script sends a PATCH request to update it.
 
-**5. Log Results**
+5. **Log Results**
 
-Each operation is logged to the console, showing whether the timezone was updated or already correct.
+	Each operation is logged to the console, showing whether the timezone was updated or already correct.
 
 ## 🧰 Functions Overview
 | Function | Description |
