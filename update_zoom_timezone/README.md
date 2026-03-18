@@ -51,7 +51,7 @@ Run the script directly from the command line with a CSV file containing user da
 ## 🧠 How It Works
 **1. Obtain OAuth Token**
 
-The script calls the Zoom OAuth token endpoint (`https://zoom.us/oauth/token`) using the **account_credentials** grant type to retrieve an access token.
+	The script calls the Zoom OAuth token endpoint (`https://zoom.us/oauth/token`) using the **account_credentials** grant type to retrieve an access token.
 
 **2. Read CSV File**
 
@@ -87,7 +87,7 @@ Each operation is logged to the console, showing whether the timezone was update
 | user1@example.com | America/Toronto |
 | user2@example.com | Europe/Rome |
 
-Timezones should be defined using the `TZ Identifier` from the [IANA time zone database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)
+Timezones should be defined using the `TZ Identifier` from the [IANA time zone database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List).
 
 ## 🧑‍💻 Example Console Output
 ```
