@@ -49,7 +49,7 @@ Run the script directly from the command line with a CSV file containing user da
 ```python update_zoom_timezone.py users.csv```
 
 ## 🧠 How It Works
-1. Obtain OAuth Token
+1. **Obtain OAuth Token**
 
 	The script calls the Zoom OAuth token endpoint (`https://zoom.us/oauth/token`) using the **account_credentials** grant type to retrieve an access token.
 
