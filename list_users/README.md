@@ -118,6 +118,6 @@ CSV file 'zoom_active_users_20260313_153845.csv' created successfully. Exiting!
 ```
 
 ## 📚 References
-- Zoom API Documentation: https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/users
-- OAuth Account Credentials Flow: https://developers.zoom.us/docs/integrations/oauth/account-level-apps/
+- Zoom API Documentation: https://developers.zoom.us/docs/api/users/#tag/users/get/users
+- OAuth Account Credentials Flow: https://developers.zoom.us/docs/integrations/oauth/#app-type-server-to-server
 

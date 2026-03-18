@@ -121,5 +121,6 @@ All 2 users from CSV processed. Exiting!
 
 ## 📚 References
 - Zoom API Documentation: https://developers.zoom.us/docs/api/users/#tag/users/get/users/{userId}
-- OAuth Account Credentials Flow: https://developers.zoom.us/docs/integrations/oauth/account-level-apps/
+  https://developers.zoom.us/docs/api/users/#tag/users/patch/users/{userId}
+- Creating a Zoom Server‐to‐Server OAuth App: https://github.com/ericlosier/zoom-script-library/wiki/Creating-a-Zoom-Server%E2%80%90to%E2%80%90Server-OAuth-App
 
