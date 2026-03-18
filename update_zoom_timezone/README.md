@@ -120,7 +120,7 @@ All 2 users from CSV processed. Exiting!
 ```
 
 ## 📚 References
-- Zoom API Documentation: https://developers.zoom.us/docs/api/users/#tag/users/get/users/{userId}
-  https://developers.zoom.us/docs/api/users/#tag/users/patch/users/{userId}
-- Creating a Zoom Server‐to‐Server OAuth App: https://github.com/ericlosier/zoom-script-library/wiki/Creating-a-Zoom-Server%E2%80%90to%E2%80%90Server-OAuth-App
-
+- [Creating a Zoom Server‐to‐Server OAuth App](https://github.com/ericlosier/zoom-script-library/wiki/Creating-a-Zoom-Server%E2%80%90to%E2%80%90Server-OAuth-App)
+- Zoom API Documentation:
+	- [GET /users/{userId}](https://developers.zoom.us/docs/api/users/#tag/users/get/users/{userId})
+	- [PATCH /users/{userId}](https://developers.zoom.us/docs/api/users/#tag/users/patch/users/{userId})
