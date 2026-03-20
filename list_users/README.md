@@ -13,7 +13,7 @@ This Python script retrieves a list of **active Zoom users** from your Zoom acco
 ## 🧩 Requirements
 
 - Python 3.7 or higher  
-- Zoom account with **OAuth App (Server-to-Server)** credentials  
+- Zoom account with **Server-to-Server OAuth App** credentials  
 - Required Python packages:
   - `requests`
   - `csv` (default)
