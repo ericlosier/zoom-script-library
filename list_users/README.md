@@ -45,11 +45,11 @@ The following granular scopes should be added to the Zoom Server-to-Server OAuth
 ## 🚀 Usage
 Run the script directly from the command line:
 
-```python list_users.txt```
+```python list_users.py```
 
 Optionally, you can specify a custom CSV filename:
 
-```python list_users.txt custom_output.csv```
+```python list_users.py custom_output.csv```
 
 If no filename is provided, the script automatically generates one in the format:
 
