@@ -2,9 +2,14 @@
 
 A collection of independent Python scripts that extend Zoom's admin portal capabilities in managing a Zoom environment.
 
+> **Note**
+>
+> The following repository is a personal, open-source project shared by the app creator and not an officially supported Zoom Communications, Inc. sample application. Zoom Communications, Inc., its employees and affiliates are not responsible for the use and maintenance of this application. Please use these sample scripts for inspiration, exploration and experimentation at your own risk and enjoyment. You may reach out to the app creator and broader Zoom Developer community on https://devforum.zoom.us/ for technical discussion and assistance, but understand there is no service level agreement support for this application. Thank you and happy coding!
+
 ## 📋 List of Available Scripts
-1.  [**list\_users**](list_users) — Fetch and export all active Zoom users.
-2.  [**update\_zoom\_timezone**](update_zoom_timezone) — Bulk update user timezones.
+1.  [**add\_sso**](add_sso) — Bulk add the SSO login method to Zoom users.
+2.  [**list\_users**](list_users) — Fetch and export all active Zoom users.
+3.  [**update\_zoom\_timezone**](update_zoom_timezone) — Bulk update Zoom user timezones.
 
 ## 📁 Structure
 Each script lives in its own folder, with:
