@@ -8,6 +8,7 @@ A collection of independent Python scripts that extend Zoom's admin portal capab
 
 ## 📋 List of Available Scripts
 1.  [**add\_sso**](add_sso) — Bulk add the SSO login method to Zoom users.
+2.  [**add\_user\_to\_group**](add_user_to_group) — Bulk add Zoom users to groups.
 2.  [**list\_users**](list_users) — Fetch and export all active Zoom users.
 3.  [**update\_zoom\_timezone**](update_zoom_timezone) — Bulk update Zoom user timezones.
 
