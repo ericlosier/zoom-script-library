@@ -13,7 +13,7 @@ This Python script adds **users to Zoom groups** based on data from a **CSV file
 ## 🧩 Requirements
 
 - Python 3.7 or higher  
-- Zoom account with **Server-to-Server OAuth App** credentials  
+- Zoom account with **Server-to-Server OAuth App** credentials  [(instructions)](https://github.com/ericlosier/zoom-script-library/wiki/Creating-a-Zoom-Server%E2%80%90to%E2%80%90Server-OAuth-App)
 - Required Python packages:
   - `requests`
   - `csv` (default)
@@ -35,7 +35,7 @@ CLIENT_SECRET = "YOUR_CLIENT_SECRET"
 ACCOUNT_ID = "YOUR_ACCOUNT_ID"
 ```
 
-These values come from your **Zoom App Credentials** in the Zoom Developer Portal.
+These values come from your **Zoom Server-to-Server OAuth App Credentials** [(instructions)](https://github.com/ericlosier/zoom-script-library/wiki/Creating-a-Zoom-Server%E2%80%90to%E2%80%90Server-OAuth-App).
 
 ### 🔐 Zoom Server-to-Server OAuth App Scopes
 The following granular scopes should be added to the Zoom Server-to-Server OAuth app used by this script:
