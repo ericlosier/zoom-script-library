@@ -213,3 +213,7 @@ __marimo__/
 # VS Code
 .vscode
 *.code-workspace
+
+# Output from zoom_phone_charges
+zoom_phone_charges_*.csv
+zoom_phone_*_charges_*.csv

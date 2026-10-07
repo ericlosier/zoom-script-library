@@ -13,7 +13,8 @@ A collection of independent Python scripts that extend Zoom's admin portal capab
 4. [**list\_users**](list_users) — Fetch and export all active Zoom users.
 5. [**update\_zoom\_timezone**](update_zoom_timezone) — Bulk update Zoom user timezones.
 6. [**zoom\_user\_export**](zoom_user_export) — Fetch and export login types for all Zoom users.
-7. [**zprec**](zprec) — Bulk export call recordings from Zoom Phone for a specific date range.
+7. [**zp\_charges**](zp_charges) — Export Zoom Phone call, fax and SMS/MMS charges for a date range, as separate and combined CSVs.
+8. [**zprec**](zprec) — Bulk export call recordings from Zoom Phone for a specific date range.
 
 ## 📁 Structure
 Each script lives in its own folder, with:

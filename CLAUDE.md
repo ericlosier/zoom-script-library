@@ -11,13 +11,14 @@ A collection of independent, standalone Python scripts that extend Zoom's admin 
 ```bash
 pip install -r requirements.txt
 python <script>/<script>.py              # no args: list_users, zoom_user_export, zprec, download_transcripts
+python zp_charges/zp_charges.py [--start ... --end ... [--yes]]   # UTC range; prompts if omitted
 python <script>/<script>.py users.csv    # CSV-driven: add_sso, add_user_to_group, update_zoom_timezone
 ```
 
 - `zprec` prompts interactively for start/end dates (`YYYY-MM-DD`).
 - `download_transcripts` reads `meeting_ids.txt` from the current working directory.
 - The CSV-driven scripts require exactly one CSV argument. Sample inputs are in each script's `examples/` folder.
-- Credentials are not read from the environment. Edit the hardcoded placeholders at the top of each script (`CLIENT_ID`, `CLIENT_SECRET`, `ACCOUNT_ID`; `zprec` uses `ZOOM_*` names). Never commit real values.
+- Credentials are hardcoded placeholders (the exception is `zp_charges`, which also honors `ZOOM_CLIENT_ID`/`ZOOM_CLIENT_SECRET`/`ZOOM_ACCOUNT_ID` env vars). Edit the hardcoded placeholders at the top of each script (`CLIENT_ID`, `CLIENT_SECRET`, `ACCOUNT_ID`; `zprec` uses `ZOOM_*` names). Never commit real values.
 - `.vscode/launch.json` runs the current file with a prompt for arguments.
 
 ## Architecture
